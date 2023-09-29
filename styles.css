@@ -3,6 +3,7 @@
     padding :0;
     box-sizing: border-box;
     color: rgb(81, 76, 76);
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -10,96 +11,228 @@ html, body {
     width: 100%;
 }
 
-body {
-    background-color: rgb(235, 230, 230);
+html {
+    scroll-behavior: smooth;
 }
 
-header {
-    width: 90%;
+body {
+    background-color: white;
+}
+
+#header {
+    width: 100%;
     height: 15%;
-    margin: 0 auto;
-    padding: 20px 0px;
+    padding: 20px 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: gray; */
+    /* background-color: rgb(235, 230, 230); */
+    /* position: sticky;
+    top: 0%;
+    z-index: 1; */
+    /* border-bottom: 2.5px solid rgb(134, 127, 127); */
 }
 
-header h1 {
+#logo {
     cursor: pointer;
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: 500;
 }
 
-header nav a{
+#header div a{
     padding: 40px;
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
 }
 
-header nav a:hover {
+#header div a:hover {
+    color: black;
     text-decoration: underline;
-    text-decoration-color: black;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(63, 61, 61);
 }
 
-main {
-    width: 90%;
-    height: 80%;
-    margin: 0 auto;
+#main {
+    width: 100%;
+    height: 85%;
+    padding: 20px 120px;
+    /* background-color: gray; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: gray; */
 }
 
-main h1 {
+#intro h1 {
     font-size: 45px;
-    margin-left: 130px;
+}
+
+#intro {
+    text-align: center;
+}
+
+#name {
+    font-size: 80px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 17px;
+    border: none;
+}
+
+#cv {
+    color: rgb(81, 76, 76);
+    background-color: rgb(235, 230, 230);
+    border: 1px solid black;
+}
+
+#cv:hover {
+    color: rgb(235, 230, 230);
+    background-color: rgb(81, 76, 76);
+}
+
+#contact {
+    color: rgb(81, 76, 76);
+    background-color: rgb(235, 230, 230);
+    padding: 15px 25px;
+    border: 1px solid black;
+}
+
+#contact:hover {
+    color: rgb(235, 230, 230);
+    background-color: rgb(81, 76, 76);
 }
 
 #socials {
-    margin-top: 20px;
-    margin-left: 130px;
     user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#socials h3 {
-    font-size: 30px;
-}
-
-#socials #icons {
-    margin: 10px auto 0px;
-}
-
-#socials a {
-    padding: 10px;
-}
-
-#socials a #facebookImage {
-    width: 40px;
-}
-
-#socials a #linkedinImage {
-    width: 40px;
-}
-
-#socials a #instagramImage {
-    width: 40px;
-}
-
-#socials a #githubImage {
-    width: 45px;
+#githubImage {
+    width: 41.7px;
+    height: 41.7px;
 }
 
 #image img {
     width: 350px;
     height: 450px;
-    border-radius: 40%;
-    margin-right: 120px;
-    /* border: 5px solid gray; */
-    filter: blur(2px);
+    border-radius: 130px;
+    filter: blur(2px); 
 }
 
 #image img:hover {
     filter: blur(0px);
+}
+
+#about {
+    width: 100%;
+    height: 90%;
+    padding: 60px 200px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+#about #aboutImage img {
+    height: 500px;
+    flex-basis: 35%;
+    border-radius: 50px;
+}
+
+#about #aboutInfo {
+    flex-basis: 60%;
+}
+
+#aboutInfo h1 {
+    font-size: 50px;
+}
+
+#aboutInfo div {
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+#skills-edu-tab {
+    width: 30%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+#skills-edu-tab p {
+    font-size: 23px;
+    font-weight: 540;
+}
+
+#skills-edu-tab #skills {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(63, 61, 61);
+}
+
+#skills-edu-tab p:hover {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(63, 61, 61);
+    cursor: pointer;
+}
+
+#skillsContent{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: upper-alpha;
+    /* align-items: center; */
+}
+
+#skillsContent .skillsTitle {
+    font-style: italic;
+    font-size: 25px;
+    /* color: black; */
+    font-weight: 550;
+}
+
+#skillsContent ul {
+    list-style-type: disc;
+}
+
+#skillsContent ul li {
+    font-size: 20px;
+    padding-top: 8px;
+    font-weight: 400;
+}
+
+#educationContainer {
+    display: none;
+}
+
+#educationContent{
+    padding: 15px;
+    display: flex;
+    list-style-type: upper-alpha;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#educationContent li {
+    padding-top: 8px;
+}
+
+#educationContent ul {
+    list-style-type: disc;
+}
+
+#educationContent ul li {
+    font-size: 20px;
+    padding-top: 8px;
+    font-weight: 400;
 }

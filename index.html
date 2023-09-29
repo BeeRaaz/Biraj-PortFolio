@@ -1,44 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biraj Dulal - PortFolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Biraj Dulal</h1>
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="works.html">Works</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section id="intro">
-            <h1>
-                Hello EveryOne!!!<br>
-                I am Biraj Dulal 
-                <div id="introMain">Future FrontEnd Developer :)</div>
-            </h1>
-            <div id="socials">
-                <h3>
-                    You can reach me at.. 
-                </h3>
-                <div id="icons">
-                    <a href="https://www.facebook.com/biraj.dulal.15" target="_blank"><img src="images/facebook.png" alt="FaceBook" id="facebookImage"></a>
-                    <a href="https://www.linkedin.com/in/biraj-dulal-1b8518127/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" id="linkedinImage"></a>
-                    <a href="https://www.instagram.com/bee.raaz/" target="_blank"><img src="images/instagram.svg" alt="Instagram" id="instagramImage"></a>
-                    <a href="https://github.com/BeeRaaz" target="_blank"><img src="images/github.png" alt="GitHub" id="githubImage"></a>
-                </div>
-            </div>
-        </section>
-        <section id="image">
-            <img src="images/BirajDulal_Photo.jpg" alt="This is a photo of Biraj Dulal.">
-        </section>
-    </main>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css">
+  </head>
+  <body>
+    <nav id="header">
+      <div id="logo">Biraj Dulal</div>
+        <div>
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Works</a>
+          <a href="">Contact</a>
+        </div>
+      </div>
+    </nav>
     
-</body>
+    <div id="main">
+      <div id="socials">
+      <a href="https://www.linkedin.com/in/biraj-dulal-1b8518127/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" id="linkedinImage"/></a>
+      <a href="https://github.com/BeeRaaz" target="_blank"><img src="images/github.png" alt="GitHub" id="githubImage"/></a>
+      </div>
+      <div id="intro">
+        <h1>
+          Hello EveryOne!!! I am <br />
+          <span id="name">Biraj Dulal</span> <br>
+          Future FrontEnd Developer :) <br>
+          <!-- <button id="cv">Download CV</button> 
+          <button id="contact">Contact Me</button> -->
+        </h1>
+      </div>
+      <div id="image">
+        <img src="images/BirajDulal_Photo.jpg" alt="This is a photo of Biraj Dulal."/>
+      </div>
+    </div>
+    
+    <div id="about">
+      <div id="aboutImage">
+        <img src="images/Biraj_Photo.jpg">
+      </div>
+      <div id="aboutInfo">
+        <h1>About Biraj</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, sit in sapiente debitis consequatur facere reprehenderit dolor quas excepturi non quaerat libero fugit vitae officia! Delectus aut quis consequatur illum libero quam, ab itaque eligendi laboriosam. Aliquid sit repudiandae, in non nobis vero eveniet iste officiis ex nam dolorum numquam.</div>
+        <div id="skills-edu-tab">
+          <p id="skills">Skills</p>
+          <p>Education</p>
+        </div>
+        <div id="skillsContainter">
+          <ol id="skillsContent">
+            <li><span class="skillsTitle">FRONTEND DEVELOPMENT</span>
+              <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>DOM Manipulation</li>
+                <li>TailWind CSS - left to learn</li>
+                <li>React JS - left to learn</li>
+                <li>Next JS - left to learn</li>
+              </ul>
+            </li>
+            <li><span class="skillsTitle">UI DESIGNING</span>
+              <ul>
+                <li>Figma</li>
+                <li>Adobe Photoshop - only basics</li>
+                <li>Adobe Indesign - long way to go</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div id="educationContainer">
+          <ol id="educationContent">
+            <li>SEE
+              <ul>
+                <li>Completed secondary level study from Lalitpur Madhyamik Vidhyalaya.</li>
+              </ul>
+            </li>
+            <li>High School
+              <ul>
+                <li>Completed higher secondary level study from Moonlight Higher secondary.</li>
+              </ul>
+            </li>
+            <li>Bachelor's in BSc. CSIT
+              <ul>
+                <li>Currently pursuing bachelor's degree from Patan Multiple Campus.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
