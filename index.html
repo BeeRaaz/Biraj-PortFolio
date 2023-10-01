@@ -130,17 +130,39 @@
             <h4>You can mail me at: <br> <span>dbiraj33@gmial.com</span></h4>
           </div>
         </div>
-        <form action="" method="post">
+        <form action="" method="">
           <h2>Leave Your Message:</h2>
-          <label for="fullname">Full Name:</label><br>
-          <input type="text" name="" id=""><br>
-          <label for="number">Contact Number:</label><br>
-          <input type="number" name="" id=""><br>
-          <label for="email">Email:</label><br>
-          <input type="email" name="" id=""><br>
-          <label for="message">Message:</label><br>
-          <input type="text"><br>
+          <div id="formContainer">
+            <div id="clientDetails">
+              <label for="fullname">Full Name:</label><br>
+              <input type="text" name="" id="" required><br>
+              <label for="number">Contact Number:</label><br>
+              <input type="text" name="" id="" required><br>
+              <label for="email">Email:</label><br>
+              <input type="email" name="" id="" required><br>
+            </div>
+            <div id="clientMessage">
+              <label for="message">Message:</label><br>
+              <textarea rows="11" cols="30" required></textarea><br>
+            </div>
+          </div>
+          <div id="submitBTN">
+            <button type="submit">Submit</button>
+          </div>
         </form>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div id="socials">
+        <a href="https://www.linkedin.com/in/biraj-dulal-1b8518127/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" id="linkedinImage"/></a>
+        <a href="https://github.com/BeeRaaz" target="_blank"><img src="images/github.png" alt="GitHub" id="githubImage"/></a>
+      </div>
+      <div id="copyrightMessage">
+        <p>- BIRAJ DULAL</p>
+      </div>
+      <div id="move-up-arrow">
+        <img src="">
       </div>
     </div>
   </body>
